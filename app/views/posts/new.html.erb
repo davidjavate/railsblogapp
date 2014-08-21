@@ -1,0 +1,13 @@
+<form action="/posts" method="post">
+<br>Blog Title:
+    <input type="text" name="post[title]">
+   <br>Author:
+    <input type="text" name="post[author]">
+    <br>Post:
+    <textarea name="post[description]"></textarea>
+     <br>Tag:
+    <input type="text" name="tag[name]">
+    <br>
+    <%= token_tag form_authenticity_token %>
+    <button> Save Post </button>
+  </form>
